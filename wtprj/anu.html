@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+<style>
+body{background-color:#F2F2F2;background-image:url("b1.jpg"); background-size: 100% 35%; background-repeat: no-repeat;}
+
+#a{font-family:"Comic Sans MS"; color:black; font-style:italic; font-size:40px;}
+#ok{font-family:"Monotype Corsiva"; color:black; font-style:italic; font-size:30px; position:relative; top:220px}
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(purple, cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.anusha {
+    margin: 35px;
+    border: 5px solid black;
+    float:left;
+    width: 400px;
+    height: 400px;
+    background-image:url("pnk.jpg");
+}
+
+div.anusha img {
+    width: 100%;
+    height: auto;
+}
+
+div.text {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family:"Lucida Calligraphy";
+    color: blue;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin:14px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+#footer{
+  background-color: #444;
+  padding:30px;
+  position: relative;
+  top:1500px;
+  height:250px;
+}
+p a img{
+  position: relative;
+  left:900px;
+  top:30px;
+}
+.address{
+  margin:30px;
+  font-size: 20px;
+  color:white;
+position:relative;
+bottom:30px;
+}
+h2{
+  color:white;
+  position: relative;
+  bottom:30px;
+  margin:30px;
+}
+#contact{
+  position: relative;
+  bottom:200px;
+}
+</style>
+</head>
+<body id="body">
+  <ul>
+    <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="ss.html">About Us</a></li>
+    <li><a href="anu.html">Our Events</a></li>
+    <li><a href="form_donor.html">Donate</a></li>
+    <li><a href="careers.html">Careers</a></li>
+      <li><a href="wtprj.html">Our Achievements</a></li>
+        <li><a href="webtech.html">Sponsors and Partners</a></li>
+    <li><a href="FAQ.html" >FAQ</a></li>
+    <li><a href="team.html" >Our team</a></li></center>
+  </ul>
+
+<center><pre id="a">ONE EVENT, THOUSAND SMILES</pre></center>
+<canvas id="Canvas01" width="1490" height="8" style="border:2px solid #bbb; margin-left:10px; margin-top:10px;"></canvas>
+
+<script>
+
+  var canvas = document.getElementById('Canvas01');
+  var ctx = canvas.getContext('2d');
+  var abc=canvas.getContext('2d');
+    var lg=ctx.createLinearGradient(100, 100, 200, 400);
+    lg.addColorStop(0, "yellow");
+    lg.addColorStop(0.5, "orange");
+    lg.addColorStop(1, "red");
+    ctx.fillStyle=lg;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+</script>
+<p id="ok"> Team Aashraya has conduncted over 350 events in the past two years, in order to raise funds for the underpriviliged. Some of these events include free health camp, teaching camps, sanitation workshops, a rally for protection of children against labour and workshops for education of rural women. We, at Aashraya believe that happiness increases by sharing and this is the motto we live by.</p>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<center><h1> IMAGE GALLERY</h1></center>
+<div class="anusha">
+
+    <img src="health-camp1.jpg" alt="Health Camp" width="1000px" height="500px">
+
+  <div class="text">Free health camp</div>
+</div>
+
+<div class="anusha">
+
+    <img src="polio.jpg" alt="Polio" width="1000px" height="500px">
+
+  <div class="text">Door to door polio campaign</div>
+</div>
+
+<div class="anusha">
+
+    <img src="edu.jpg" alt="Educational Camp" width="1000px" height="500px">
+
+  <div class="text">Strive for education campaign</div>
+</div>
+
+<div class="anusha">
+
+    <img src="stop.jpg" alt="Rally" width="1000" height="500">
+
+  <div class="text">Rally against child labour</div>
+</div>
+<div class="anusha">
+
+    <img src="we.jpg" alt="Rally" width="1000" height="500">
+
+  <div class="text">Free education for rural women</div>
+</div>
+<div class="anusha">
+
+    <img src="yamuna.jpg" alt="Rally" width="1000" height="500">
+
+  <div class="text">Clean the Yamuna campaign</div>
+</div>
+<div id="footer">
+  <p class="icons"><a href="http://www.twitter.com"><img src="twitter.png" height="50px" width="50px"/></a>
+<a href="http://www.facebook.com">  <img src="fb.png" height="50px" width="50px"/></a>
+<a href="mailto:aashraya@gmail.com"><img src="gmail.png" height="50px" width="60px"/></a></p>
+<h2>Address</h2>
+ <p class="address">
+   Aashraya Foundation<br/>PO Box 7222<br/>Colorado Springs, CO 80933
+ </p>
+ <h2 align="center" id="contact">Contact Us </h2>
+ <p align="center" class="address" id="contact">Aprameya Bharadwaj <br/> aprameya.bharadwaj@gmail.com<br/> Mobile No:982653762</p>
+
+</div>
+</body>

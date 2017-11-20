@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#abc{font-family:"Lucida Calligraphy"; color:green; font-style:italic; font-size:40px;}
+.pqr{font-family:"Comic Sans MS"; color:#000080; font-size:20px}
+body{ background-size: 100% ; background-repeat: no-repeat;
+padding:0;
+margin:0;
+background-color: #f2f2f2}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin:14px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+#footer{
+  background-color: #444;
+  padding:30px;
+  /*position: relative;
+  bottom:700px;
+  height:250px;
+  width:1205px;*/
+  height:250px;
+}
+p a img{
+  position: relative;
+  left:900px;
+  top:30px;
+}
+.address{
+  margin:30px;
+  font-size: 20px;
+  color:white;
+position:relative;
+bottom:30px;
+}
+h2{
+  color:white;
+  position: relative;
+  bottom:30px;
+  margin:30px;
+}
+#contact{
+  position: relative;
+  bottom:200px;
+}
+#images{
+  position: relative;
+  bottom:20px;
+}
+
+</style>
+<script type="text/javascript">
+var image1 = new Image()
+image1.src = "4.jpg"
+var image2 = new Image()
+image2.src = "5.jpg"
+var image3 = new Image()
+image3.src = "13.jpg"
+var image4 = new Image()
+image4.src = "1.jpg"
+</script>
+</head>
+<body>
+  <ul>
+    <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="ss.html">About Us</a></li>
+    <li><a href="anu.html">Our Events</a></li>
+    <li><a href="form_donor.html">Donate</a></li>
+    <li><a href="careers.html">Careers</a></li>
+      <li><a href="wtprj.html">Our Achievements</a></li>
+        <li><a href="webtech.html">Sponsors and Partners</a></li>
+    <li><a href="FAQ.html" >FAQ</a></li>
+    <li><a href="team.html" >Our team</a></li></center>
+  </ul>
+<p id="images"><img src="th.jpg" width="100%" height="450" name="slide" /></p>
+<script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<4)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2000);
+        }
+        slideit();
+</script>
+<u id="abc">ABOUT US</u>
+<p class="pqr"> Aashraya Foundation is a national level development organisation directly benefitting over 400,000 children and their families every year, through more than 200 live welfare projects on education, healthcare, livelihood and women empowerment, in over 950 remote villages and slums across 25 states of India.</p>
+
+<p class="pqr">Education is both the means as well as the end to a better life: the means because it empowers an individual to earn his/her livelihood and the end because it increases one's awareness on a range of issues � from healthcare to appropriate social behaviour to understanding one's rights � and in the process help him/her evolve as a better citizen.</p>
+
+<p class="pqr">Doubtless, education is the most powerful catalyst for social transformation. But child education cannot be done in isolation. A child will go to school only if the family, particularly the mother, is assured of healthcare and empowered. Moreover, when an elder sibling is relevantly skilled to be employable and begins earning, the journey of empowerment continues beyond the present generation.</p>
+<div id="footer">
+  <p class="icons"><a href="http://www.twitter.com"><img src="twitter.png" height="50px" width="50px"/></a>
+<a href="http://www.facebook.com">  <img src="fb.png" height="50px" width="50px"/></a>
+<a href="mailto:aashraya@gmail.com"><img src="gmail.png" height="50px" width="60px"/></a></p>
+<h2>Address</h2>
+ <p class="address">
+   Aashraya Foundation<br/>PO Box 7222<br/>Colorado Springs, CO 80933
+ </p>
+ <h2 align="center" id="contact">Contact Us </h2>
+ <p align="center" class="address" id="contact">Aprameya Bharadwaj <br/> aprameya.bharadwaj@gmail.com<br/> Mobile No:982653762</p>
+
+</div>
+</body>
