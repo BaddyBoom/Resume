@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>scroll </title>
+  <link rel="stylesheet" href="animate.css"/>
+  <style>
+  body{
+    background-color: #f2f2f2;
+    font-family: myFirstFont;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(express.TTF);
+}
+  body{
+    margin:0px;
+    padding:0px;
+  }
+  #box1{
+    background-color: blue;
+    height:600px;
+    width:100%;
+
+  }
+  #box2{
+
+    position:relative;
+    bottom:210px;
+  }
+  #box3{
+    position:relative;
+    bottom:615px;
+    background-color: #1fa9b6 ;
+    /*opacity: 0.5;*/
+    height:600px;
+    width:100%;
+  }
+  video{
+    zoom:1.5;
+    position:relative;
+    bottom:100px;
+  }
+  #heading{
+    font-size: 60px;
+    color: white;
+    margin:20%;
+    position:absolute;
+    top:10px;
+  }
+  #heading1{
+    font-size: 50px;
+    color:#ba6015;
+    margin:10%;
+    position:relative;
+    bottom:600px;
+  }
+  #heading2{
+    font-size: 50px;
+    color:#6f5215;
+    margin:10%;
+    position:relative;
+    opacity: 1;
+    bottom:600px;
+  }
+  #img1{
+    opacity:0.3;
+  }
+  #img2{
+    opacity:0.5;
+  }
+  </style>
+  <script src="wow.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+</head>
+<body>
+
+  <video autoplay src="happy.mp4" height="600px" width='100%' muted>
+  </video>
+<h1 align="center" id="heading">Helping Families Overcome Financial Obstacles to Adoption</h1>
+  <div id="box2"><img src="son.jpeg" height="600px" width="100%" id="img1"></img>
+  <h1 align="center" id="heading1">We envision a future where no child lives without the love and security of a forever family</h1></div>
+  <div id="box3"><img src="family1.jpg" height="600px" width="100%" id="img2"></img>
+    <h1 align="center" id="heading2">1 year. 100 Forever Families.</h1>
+
+</div>
+</body>
+<script>
+
+// var box1=document.getElementById('box1');
+// var box2=document.getElementById('box2');
+//
+var vid=document.querySelector("video");
+window.addEventListener("scroll", change, false);
+ var count=0;
+var flag=0;
+function change()
+
+ {
+   count++;
+   var x=document.documentElement.scrollTop;
+   console.log(x);
+   if(x>420 && !flag)
+   {
+        flag=1;
+        document.getElementById('box2').className = "animated slideInLeft";
+        console.log("scrolled");
+}
+if(x>1000)
+{
+  document.getElementById('box3').className = "animated slideInRight";
+}
+if(x>420)
+{
+  vid.pause();
+}
+else if(x<420)
+{
+  vid.play();
+}
+}
+
+</script>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+
+        #t1{
+
+            height: 500px;
+            width: 500px;
+            background-color:cadetblue;
+        }
+
+        body{
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding:0;
+            margin:0;
+
+
+        }
+        form{
+          zoom:1.5;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          margin:18px;
+          text-decoration: none;
+      }
+
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+          background-color: #111;
+      }
+      #footer{
+        background-color: #444;
+        padding:30px;
+        position: relative;
+        top:300px;
+        height:250px;
+      }
+      p a img{
+        position: relative;
+        left:900px;
+        top:50px;
+      }
+      .address{
+        margin:30px;
+        font-size: 20px;
+        color:white;
+      position:relative;
+      bottom:50px;
+      }
+      .h2{
+        color:white;
+        position: relative;
+        bottom:50px;
+        margin:30px;
+      }
+      #contact{
+        position: relative;
+        bottom:200px;
+      }
+   </style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+  <ul>
+    <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="ss.html">About Us</a></li>
+    <li><a href="anu.html">Our Events</a></li>
+    <li><a href="form_donor.html">Donate</a></li>
+    <li><a href="careers.html">Careers</a></li>
+      <li><a href="wtprj.html">Our Achievements</a></li>
+        <li><a href="webtech.html">Sponsors and Partners</a></li>
+    <li><a href="FAQ.html" >FAQ</a></li>
+    <li><a href="team.html" >Our team</a></li></center>
+  </ul>
+<br/>
+
+
+<center>
+
+
+<div id="t1">
+    <center><h1>Join Us!</h1></center>
+    <br></br>
+<form id="form" onsubmit="validate()" action="careers.php" method="get">
+    <input id="fs" type = "text" name="first" placeholder="First Name"><br></br>
+    <input id="ls" type = "text" name="last" placeholder="Last Name"><br></br>
+    <input type="email" name = "em" placeholder="Email"><br></br>
+    <input id="mob" type="text" name="mob" placeholder="Phone Number"><br></br>
+    <input id="add" type="text" name="ad" placeholder="Address"><br></br>
+    <input type="number" name="age" min="18" placeholder="Age"></br>
+    <center><h4>**Please note: minimum age to apply is 18!**</h4></center>
+    <input id="sub" type="submit">
+ <center><h2 style="color:black">Embark on this mission with us today!</h2></center>
+
+
+
+
+
+
+
+
+</form>
+</div>
+</center>
+<div id="footer">
+  <p class="icons"><a href="http://www.twitter.com"><img src="twitter.png" height="50px" width="50px"/></a>
+<a href="http://www.facebook.com">  <img src="fb.png" height="50px" width="50px"/></a>
+<a href="mailto:aashraya@gmail.com"><img src="gmail.png" height="50px" width="60px"/></a></p>
+<h2 class="h2">Address</h2>
+ <p class="address">
+   Aashraya Foundation<br/>PO Box 7222<br/>Colorado Springs, CO 80933
+ </p>
+ <h2 align="center" id="contact" class="h2">Contact Us </h2>
+ <p align="center" class="address" id="contact">Aprameya Bharadwaj <br/> aprameya.bharadwaj@gmail.com<br/> Mobile No:982653762</p>
+
+</div>
+
+
+
+
+
+
+
+</body>
+<script>
+    // var ip = document.querySelectorAll("input");
+    // for(var k=0;k<ip.length-1;k++)
+    //     {
+    //         ip[k].addEventListener("focus",place,false)
+    //     }
+    // function place(e)
+    // {
+    //     e.target.setAttribute("placeholder","");
+    // }
+
+
+    function validate()
+    {
+        var fs = document.getElementById("fs")
+        var ls = document.getElementById("ls")
+        var mob = document.getElementById("mob")
+        var add = document.getElementById("add")
+        if(fs.value!="" && ls.value!="" && add.value!="" && mob.value==parseInt(mob.value) && mob.value.length==10 )
+        {
+            console.log("hi")
+            return true;
+        }
+        else
+            { console.log("bye")
+            return false;
+            }
+    }
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    
+    
+        #t1{ 
+            
+            height: 500px;
+            width: 500px;
+            background-color:cadetblue;
+        }
+    
+        body{
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            
+        }
+   </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</head>
+ 
+
+
+<body>
+
+
+    
+    
+    
+    
+    
+    
+<center>
+     
+
+<div id="t1">
+    <center><h1>Join Us!</h1></center>
+    <br></br>
+<form id="form" onsubmit="validate()" action="careers.php" method="get">
+    <input id="fs" type = "text" name="first" placeholder="First Name"><br></br>
+    <input id="ls" type = "text" name="last" placeholder="Last Name"><br></br>
+    <input type="email" name = "em" placeholder="Email"><br></br>
+    <input id="mob" type="text" name="mob" placeholder="Phone Number"><br></br>
+    <input id="add" type="text" name="ad" placeholder="Address"><br></br>
+    <input type="number" name="age" min="18" placeholder="Age"></br>
+    <center><h4>**Please note: minimum age to apply is 18!**</h4></center>
+    <input id="sub" type="submit">
+ <center><h2>Embark on this mission with us today!</h2></center>
+
+    
+
+    
+    
+    
+    
+    
+</form>
+</div>
+</center>
+
+    
+
+ 
+    
+    
+    
+
+</body>
+<script>
+    var ip = document.querySelectorAll("input");
+    for(var k=0;k<ip.length-1;k++)
+        {
+            ip[k].addEventListener("focus",place,false)
+        }
+    function place(e)
+    {
+        e.target.setAttribute("placeholder","");
+    }
+    
+    
+    function validate()
+    {
+        var fs = document.getElementById("fs")
+        var ls = document.getElementById("ls")
+        var mob = document.getElementById("mob")
+        var add = document.getElementById("add")
+        if(fs.value!="" && ls.value!="" && add.value!="" && mob.value==parseInt(mob.value) && mob.value.length==10 )
+        {  
+            console.log("hi")
+            return true; 
+        }
+        else
+            { console.log("bye")
+            return false;
+            }
+    }
+    
+    
+</script>
+
+
+</html>

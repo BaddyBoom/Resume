@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>scroll </title>
+  <link rel="stylesheet" href="animate.css"/>
+  <style>
+  body{
+    background-color: #f2f2f2;
+    font-family: myFirstFont;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(express.TTF);
+}
+  body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:2000px;
+  }
+  #box1{
+    background-color: blue;
+    height:620px;
+    width:100%;
+    position: relative;
+    bottom:140px;
+
+  }
+  #box2{
+    opacity: 0;
+    position:relative;
+    bottom:265px;
+  }
+  #box3{
+    position:relative;
+    bottom:700px;
+    /*background-color: #1fa9b6 ;*/
+    opacity: 0;
+    height:620px;
+    width:100%;
+  }
+  #box4{
+    position:relative;
+    bottom:700px;
+    /*background-color: #1fa9b6 ;*/
+    /*opacity: 0;*/
+    height:620px;
+    width:100%;
+  }
+  video{
+    zoom:1.5;
+    position:relative;
+    bottom:110px;
+    z-index:-1;
+  }
+  #heading{
+    font-size: 60px;
+    color: white;
+    margin:20%;
+    position:absolute;
+    top:10px;
+  }
+  #heading1{
+    font-size: 50px;
+    color:#ba6015;
+    margin:10%;
+    position:relative;
+    bottom:600px;
+  }
+  #heading2{
+    font-size: 50px;
+    color:#6f5215;
+    margin:10%;
+    position:relative;
+    opacity: 1;
+    bottom:600px;
+  }
+  #img1{
+    opacity:0.3;
+    z-index: -1;
+  }
+  #img2{
+    opacity:0.5;
+    z-index: -1;
+  }
+  #footer{
+    background-color: #444;
+    padding:30px;
+    position: relative;
+    bottom:700px;
+    height:250px;
+    /*width:1205px;*/
+  }
+  p a img{
+    position: relative;
+    left:80%;
+    top:30px;
+  }
+  .address{
+    margin:30px;
+    font-size: 20px;
+    color:white;
+position:relative;
+bottom:30px;
+  }
+  h2{
+    color:white;
+    position: relative;
+    bottom:30px;
+    margin:30px;
+  }
+  #contact{
+    position: relative;
+    bottom:200px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin:14px;
+    text-decoration: none;
+}
+#circle{
+  border-radius: 100%;
+  height:200px;
+  width:200px;
+  background-color:#1b4f9d;
+  /*padding:10px;*/
+  transform: translate(540px,-400px);
+  opacity:0;
+  transition:2s;
+  color:white;
+}
+#circle1{
+  border-radius: 100%;
+  height:50px;
+  width:50px;
+  background-color:#729d1b;
+  /*padding:10px;*/
+  transform: translate(640px,-1020px);
+  opacity:0;
+  transition:6s;
+  color:white;
+}
+#img3{
+  opacity:1;
+  z-index: -1;
+}
+#movetext{
+  position: relative;
+  top:70px;
+  left:20px;
+  font-size: 40px;
+
+}
+#movetext2{
+  position: relative;
+  bottom:70px;
+  left:20px;
+  font-size: 40px;
+  color:white;
+transform: translate(0px,-540px);
+}
+#movetext3{
+  position: relative;
+  top:70px;
+  left:20px;
+  font-size: 40px;
+transform: translate(940px,-940px);
+}
+#movetext1{
+  position: relative;
+  top:10px;
+  left:10px;
+  font-size: 20px;
+
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+window{
+  height:1000px;
+}
+  </style>
+  <script src="wow.js"></script>
+	<script>
+	new WOW().init();
+	</script>
+</head>
+<body>
+  <div>
+
+  <ul>
+    <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="ss.html">About Us</a></li>
+    <li><a href="anu.html">Our Events</a></li>
+    <li><a href="form_donor.html">Donate</a></li>
+    <li><a href="careers.html">Careers</a></li>
+      <li><a href="wtprj.html">Our Achievements</a></li>
+        <li><a href="webtech.html">Sponsors and Partners</a></li>
+    <li><a href="FAQ.html" >FAQ</a></li>
+    <li><a href="team.html" >Our team</a></li></center>
+  </ul></div>
+  <br/><br/><br/>
+  <video autoplay src="happy.mp4" height="600px" width='100%' muted>
+  </video>
+<h1 align="center" id="heading">Helping Families Overcome Financial Obstacles to Adoption</h1>
+  <div id="box2"><img src="son.jpeg" height="620px" width="100%" id="img1"></img>
+  <h1 align="center" id="heading1">We envision a future where no child lives without the love and security of a forever family</h1></div>
+  <div id="box3"><img src="family1.jpg" height="620px" width="100%" id="img2"></img>
+    <h1 align="center" id="heading2">1 year. 100 Forever Families.</h1></div>
+    <div id="box4"><img src="babies.jpg" height="620px" width="100%" id="img3"/>
+<div id="circle"><span id="movetext">18 Million</span></div>
+<h2 id="movetext2">There are <br/>18 million <br>orphans</h2>
+<h2 id="movetext3">Out of which<br/> only 10% <br/>are adopted</h2>
+<div id="circle1"><span id="movetext1">10%</span></div>
+</div>
+<div id="footer">
+  <p class="icons"><a href="http://www.twitter.com"><img src="twitter.png" height="50px" width="50px"/></a>
+<a href="http://www.facebook.com">  <img src="fb.png" height="50px" width="50px"/></a>
+<a href="mailto:aashraya@gmail.com"><img src="gmail.png" height="50px" width="60px"/></a></p>
+<h2>Address</h2>
+ <p class="address">
+   Aashraya Foundation<br/>PO Box 7222<br/>Colorado Springs, CO 80933
+ </p>
+ <h2 align="center" id="contact">Contact Us </h2>
+ <p align="center" class="address" id="contact">Aprameya Bharadwaj <br/> aprameya.bharadwaj@gmail.com<br/> Mobile No:982653762</p>
+
+</div>
+
+</body>
+<script>
+
+// var box1=document.getElementById('box1');
+// var box2=document.getElementById('box2');
+//
+var vid=document.querySelector("video");
+window.addEventListener("scroll", change, false);
+ var count=0;
+var flag=0;
+function change()
+
+ {
+   count++;
+   var x=document.documentElement.scrollTop;
+   console.log(x);
+   if(x>420 && !flag)
+   {
+        flag=1;
+        document.getElementById('box2').style.opacity = "1";
+        document.getElementById('box2').className = "animated slideInLeft";
+        console.log("scrolled");
+}
+if(x>1200)
+{
+  document.getElementById('box3').style.opacity = "1";
+  document.getElementById('box3').className = "animated slideInRight";
+}
+if(x>2000)
+{
+  document.getElementById('circle').style.opacity = "1";
+    document.getElementById('circle1').style.opacity = "1";
+}
+if(x>420)
+{
+  vid.pause();
+}
+else if(x<420)
+{
+  vid.play();
+}
+}
+
+</script>
+</html>

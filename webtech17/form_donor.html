@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donor page</title>
+  <style>
+  body{
+    padding:0;
+    margin:0;
+    background-color: #333;
+    font-family: sans-serif;
+  }
+  #namediv{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-left:  30px;
+    margin-right: 30px;
+  }
+  .names{
+    padding:5px;
+    margin-left: 110px;
+    /*margin-bottom: 30px;*/
+    margin-top: 30px;
+    /*margin-right: 120px;*/
+    display: inline-block;
+    width: 270px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #d3d3cf;
+
+  }
+  .names1{
+    padding:5px;
+    margin-left: 60px;
+    /*margin-bottom: 30px;*/
+    margin-top: 30px;
+    /*margin-right: 120px;*/
+    display: inline-block;
+    width: 270px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #d3d3cf;
+
+  }
+  #fname{
+    left:130px;
+top:445px;
+  }
+  #lname{
+    left:530px;
+top:445px;
+  }
+  #email{
+    left:130px;
+    top:500px;
+  }
+  #Mnumber{
+    left:530px;
+top:500px;
+  }
+  #chname{
+    left:130px;
+top:680px;
+  }
+  #ccname{
+    left:530px;
+top:680px;
+  }
+  #cvv{
+    left:130px;
+    top:740px;
+  }
+  #ced{
+    left:530px;
+top:740px;
+  }
+  .titles{
+    color:black;
+    position: absolute;
+  }
+  #text1{
+    position: relative;
+    bottom:6px;
+    color:black;
+  }
+  #p1{
+    color:black;
+    position:relative;
+    bottom:10px;
+  }
+  #small{
+    background-color: white;
+    margin-left:30px;
+    margin-right: 30px;
+    height:50px;
+    padding:10px;
+    border-radius: 15px 15px 15px 15px;
+    color:black;
+  }
+  #check{
+    zoom:2.5;
+  }
+  .move{
+    position:relative;
+    left:30px;
+  }
+#sidediv{
+  position: absolute;
+  height:800px;
+  width:25%;
+  left:69.8%;
+  top:200px;
+  background-color: white;
+  border-radius: 20px 20px;
+  padding:10px;
+}
+  .divs{
+
+
+    width:700px;
+    height:30px;
+    display: inline-block;
+    margin:20px;
+    font-size: 30px;
+    align-content: center;
+    position: relative;
+    top:20px;
+  }
+
+  #maindiv{
+    background-color: #1E1E17;
+    color:white;
+    width:70%;
+    border-radius: 5%;
+    height:1000px;
+    position: relative;
+    top:80px;
+  }
+  #paydiv{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-left:30px;
+    margin-right: 30px;
+    padding-top: 30px;
+  }
+  img{
+    position:relative;
+    top:40px;
+    margin:5px
+  }
+  #text2{
+    margin:5px;
+  }
+  #gift{
+    position: relative;
+    top:80px;
+  }
+  #submit{
+    width:100px;
+    padding:10px;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    /*left:400px;*/
+    top:40px;
+  }
+  #don{
+    margin:30px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+    position: relative;
+    top:50px;
+    width:700px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin:14px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+#mainheading{
+  position: relative;
+  top:60px;
+  font-size: 50px;
+}
+#footer{
+  background-color: #444;
+  padding:30px;
+  position: relative;
+  top:200px;
+  height:250px;
+}
+p a img{
+  position: relative;
+  left:900px;
+  top:70px;
+}
+.address{
+  margin:30px;
+  font-size: 20px;
+  color:white;
+position:relative;
+bottom:30px;
+}
+h2{
+  color:white;
+  position: relative;
+  bottom:30px;
+  margin:30px;
+}
+#contact{
+  position: relative;
+  bottom:200px;
+}
+  </style>
+  <!-- <script>
+
+  </script> -->
+</head>
+<body>
+  <ul>
+    <center>
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="ss.html">About Us</a></li>
+    <li><a href="anu.html">Our Events</a></li>
+    <li><a href="form_donor.html">Donate</a></li>
+    <li><a href="careers.html">Careers</a></li>
+      <li><a href="wtprj.html">Our Achievements</a></li>
+        <li><a href="webtech.html">Sponsors and Partners</a></li>
+    <li><a href="FAQ.html" >FAQ</a></li>
+    <li><a href="team.html" >Our team</a></li></center>
+  </ul>
+<center>
+  <div id="maindiv"><h1 align="center" id="mainheading">Make a Donation</h1>
+    <p class="move" id="gift">YOUR GIFT<sup>(INR)</sup></p>
+    <form method="get" onSubmit="return formValidation()" action="careers2.php">
+<input type="text" name="mon" placeholder="Enter the amount you wish to donate!" class="divs" id="don">
+<!-- </form> -->
+<br/><br/>
+<p class="move">MAKE THIS A MONTHLY GIFT</p>
+<div id='small'><input type="checkbox" id="check"/><label id="text1">Your sustaining gift will automatically repeat each month until you decide to cancel it.</label></div>
+  <p class="move">YOUR INFORMATION </p>
+  <div id="namediv">
+    <!-- <form method="get"> -->
+
+      <label class="titles" id="fname">First Name*</label><input type="text" name="Fname" class="names1" />
+
+      <label class="titles" id="lname">Last Name*</label>  <input type="text" name="Lname" class="names" />
+
+    <label class="titles" id="email">Email ID*</label>    <input type="email" name="email" class="names1" />
+
+      <label class="titles" id="Mnumber">Mobile Number</label>  <input type="tel" name="mobile" class="names"/>
+    <!-- </form> -->
+    <br/><br/><br/>
+  </div>
+  <p class="move">PAYMENT INFORMATION</p>
+  <div id="paydiv">
+    <!-- <form method="get"> -->
+
+      <label class="titles" id="chname">Card Holder's Name*</label><input type="text" name="Chname" class="names1" />
+
+      <label class="titles" id="ccname">Credit Card Number*</label>  <input type="text" name="ccname" class="names"/>
+    <label class="titles" id="cvv">Card CVV*</label>    <input type="number" min="001" max="999" step="1" name="cvv" class="names1" />
+      <label class="titles" id="ced">Card Expiration Date</label>  <input type="month" name="ced" class="names" min="2017-11"/>
+    <!-- </form> -->
+    <br/><br/><br/>
+
+</div>
+<!-- <form method="get"> -->
+<input type="submit" id="submit">
+</form>
+</div>
+<!-- <div id="sidediv">
+<p id="text2">  <h1>WHERE THE MONEY GOES</h1> <br/>
+  since our inception we have been a program centered foundation and your
+  donations will be put to very good use. Your humble offerings have helped
+  us save millions of lives over the years.</p>
+  <img src="chaart.jpeg" width="370px" height="200px"></img>
+
+</div> -->
+</center>
+</div>
+</center>
+<div id="footer">
+  <p class="icons"><a href="http://www.twitter.com"><img src="twitter.png" height="50px" width="50px"/></a>
+<a href="http://www.facebook.com">  <img src="fb.png" height="50px" width="50px"/></a>
+<a href="mailto:aashraya@gmail.com"><img src="gmail.png" height="50px" width="60px"/></a></p>
+<h2 class="h2">Address</h2>
+ <p class="address">
+   Aashraya Foundation<br/>PO Box 7222<br/>Colorado Springs, CO 80933
+ </p>
+ <h2 align="center" id="contact" class="h2">Contact Us </h2>
+ <p align="center" class="address" id="contact">Aprameya Bharadwaj <br/> aprameya.bharadwaj@gmail.com<br/> Mobile No:982653762</p>
+
+</div>
+</body>
+
+<script>
+
+     var ip = document.getElementById("don")
+    don.addEventListener("focus",place,false);
+    function place(e)
+    {
+        e.target.setAttribute("placeholder","");
+    }
+
+
+
+
+
+
+
+
+
+//  var maindiv=document.getElementById('maindiv');
+// var buttons=document.querySelectorAll(".divs");
+// for(var i=0;i<6;i++)
+// {
+//   buttons[i].addEventListener("click",yellow1,false);
+// }
+// function yellow1(e)
+// {
+//   for(var i=0;i<6;i++)
+//   {
+//     if(buttons[i]==e.target)
+//     {
+//       buttons[i].style.backgroundColor="#e8dd0f";
+//     }
+//     else {
+//       {
+//         buttons[i].style.backgroundColor="gray";
+//       }
+//     }
+//   }
+
+
+// function check_Alpha(letters){
+//     var regex = /^[a-zA-Z]+$/;
+//     if((regex.test(letters.Fname.value) == false)||(regex.test(letters.Lname.value) == false)){
+//    alert("Name must be in alphabets only");
+//    if((letters.Lname.value))
+//    {
+//    letters.Fname.focus();
+//    return false;
+//  }
+//  else {
+//    letters.Lname.focus();
+//    return false;
+//  }
+//     }
+//     if(letters.Fname.value == " "){
+//       alert("Name Field cannot be left empty");
+//       letters.Fname.focus();
+//       return false;
+//     }
+//     return true;
+//   }
+
+function formValidation() {
+// Make quick references to our fields.
+var firstname = document.getElementById('Fname');
+var ccname = document.getElementById('ccname');
+var chname = document.getElementById('chname');
+var mobile = document.getElementById('mobile');
+var lastname = document.getElementById('Lname');
+var email = document.getElementById('email');
+// To check empty form fields.
+if (firstname.value.length == 0) {
+// document.getElementById('head').innerText = "* All fields are mandatory *";
+alert("*All fields are mandatory*") // This segment displays the validation rule for all fields
+firstname.focus();
+return false;
+}
+// Check each input in the order that it appears in the form.
+if (inputAlphabet(firstname, "* For your name please use alphabets only *")) {
+if (inputAlphabet(lastname,"* For your name please use alphabets only *")) {
+if (emailValidation(email, "* Please enter a valid email address *")) {
+if (textNumeric(mobile, "* Please enter a valid mobile number *")) {
+if (inputAlphabet(chname,"* For your name please use alphabets only *" )) {
+if (textNumeric(ccname,"* Please enter a valid mobile number *" )) {
+
+return true;
+}
+}
+}
+}
+}
+}
+return false;
+}
+// Function that checks whether input text is numeric or not.
+function textNumeric(inputtext, alertMsg) {
+var numericExpression = /^[0-9]+$/;
+if (inputtext.value.match(numericExpression)) {
+return true;
+} else {
+// document.getElementById('p6').innerText = alertMsg;
+alert(alertMsg); // This segment displays the validation rule for zip.
+inputtext.focus();
+return false;
+}
+}
+// Function that checks whether input text is an alphabetic character or not.
+function inputAlphabet(inputtext, alertMsg) {
+var alphaExp = /^[a-zA-Z]+$/;
+if (inputtext.value.match(alphaExp)) {
+return true;
+} else {
+// document.getElementById('p1').innerText = alertMsg; // This segment displays the validation rule for name.
+alert(alertMsg);
+inputtext.focus();
+return false;
+}
+}
+
+// Function that checks whether a option is selected from the selector and if it's not it displays an alert message.
+function trueSelection(inputtext, alertMsg) {
+if (inputtext.value == "Please Choose") {
+// document.getElementById('p4').innerText = alertMsg; //this segment displays the validation rule for selection.
+alert(alertMsg);
+inputtext.focus();
+return false;
+} else {
+return true;
+}
+}
+// Function that checks whether an user entered valid email address or not and displays alert message on wrong email address format.
+function emailValidation(inputtext, alertMsg) {
+var emailExp = /^[w-.+]+@[a-zA-Z0-9.-]+.[a-zA-z0-9]{2,4}$/;
+if (inputtext.value.match(emailExp)) {
+return true;
+} else {
+// document.getElementById('p3').innerText = alertMsg; // This segment displays the validation rule for email.
+alert(alertMsg);
+inputtext.focus();
+return false;
+}
+}
+
+
+</script>
+</html>
